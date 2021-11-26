@@ -143,24 +143,18 @@ export default function FistNFT() {
         <Text maxW="400px" paddingY="10">
           Each unique. Each beautiful. Discover your NFT today.
         </Text>
-
-        {
-          (currentAccount = "" ? (
-            <Button
-              bgGradient="radial(#2C66B8, #592CB8)"
-              onClick={connectWallet}
-            >
-              Connect to Wallet
-            </Button>
-          ) : (
-            <Button
-              bgGradient="radial(#2C66B8, #592CB8)"
-              onClick={askContractToMintNft}
-            >
-              Mint NFT
-            </Button>
-          ))
-        }
+        {currentAccount === "" ? (
+          <Button bgGradient="radial(#2C66B8, #592CB8)" onClick={connectWallet}>
+            Connect to Wallet
+          </Button>
+        ) : (
+          <Button
+            bgGradient="radial(#2C66B8, #592CB8)"
+            onClick={askContractToMintNft}
+          >
+            Mint NFT
+          </Button>
+        )}
       </Box>
     </Center>
   );
