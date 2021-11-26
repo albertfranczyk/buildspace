@@ -176,7 +176,7 @@ export default function ShakeThat() {
         <Heading>🦄 GM!</Heading>
 
         <Text maxW="400px" paddingY="10">
-          I am Albert and I am learning about WEB 3 so that's pretty cool right?
+          I am Albert and I am learning about WEB 3 so thats pretty cool right?
           Connect your Ethereum wallet and wave at me!
         </Text>
         {currentAccount.length == 0 ? (
