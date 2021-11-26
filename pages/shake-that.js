@@ -180,11 +180,7 @@ export default function ShakeThat() {
           Connect your Ethereum wallet and wave at me!
         </Text>
         {currentAccount.length == 0 ? (
-          <Button
-            className="waveButton"
-            bgGradient="radial(#2C66B8, #592CB8)"
-            onClick={connectWallet}
-          >
+          <Button bgGradient="radial(#2C66B8, #592CB8)" onClick={connectWallet}>
             Connect Wallet
           </Button>
         ) : (
