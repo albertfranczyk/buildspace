@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
+
 import { Heading, Box, Text, Button, Flex, Image } from "@chakra-ui/react";
 import { CONTRACT_ADDRESS } from "../utils/contractAdress";
 import { transformCharacterData } from "../utils/transformCharacterData";
-import myEpicGame from "../utils/MyEpicGame.json";
+import myEpicGame from "../utils/myEpicGame.json";
 
 export default function Arena({ characterNFT }) {
   // State
